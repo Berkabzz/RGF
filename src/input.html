@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <title>React App</title>
+</head>
+<body>
+  <div id="root">
+    <div>
+      <div>
+        <div class="flex py-4 px-8 items-center justify-between gap-2">
+          <div class="flex w-1/6 lg:w-1/2 gap-5">
+            <i class="fa-solid fa-bars text-2xl"></i>
+            <div class="hidden lg:flex items-center gap-5">
+              <p class="text-2xl">RGF<span class="font-bold">Shop</span></p>
+              <div class="flex item-center bg-gray-100 rounded-full overflow-hidden">
+                <p class="py-1 px-4 text-sm bg-black text-white font-bold rounded-full">Delivery</p>
+                <p class="py-1 px-4 Pick-up font-bold">Pick-up</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center w-5/6 lg:w-2/5 gap-2 bg-gray-100 rounded-full p-2">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input class="w-full outline-none bg-gray-100" type="text" placeholder="Search ... ">
+          </div>
+          <div class="hidden md:flex md:w-1/6 items-center gap-2 justify-end">
+            <i class="fa-solid fa-cart-shopping text-2xl"></i>
+            <p class="text-base">Cart</p>
+          </div>
+          <div class="w-2/3 md:w-1/2 fixed top-0 left-[-100%] z-20 h-screen bg-white p-4 duration-300">
+            <div class="mt-2 flex justify-between items-center">
+              <p class="text-base md:text-2xl ml-5">RGF<span class="font-bold">Shop</span></p>
+              <i class="fa-solid fa-x text-base hover:text-green-400 cursor-pointer"></i>
+            </div>
+            <div class="mt-10 flex flex-col gap-5 ml-5">
+              <a class="text-base text-gray-700 hover:text-green-400" href=""><i class="fa-solid fa-cart-flatbed-suitcase"></i> Order</a>
+              <a class="text-base text-gray-700 hover:text-green-400" href=""><i class="fa-solid fa-heart"></i> Favorite</a>
+              <a class="text-base text-gray-700 hover:text-green-400" href=""><i class="fa-solid fa-wallet"></i> Wallet</a>
+              <a class="text-base text-gray-700 hover:text-green-400" href=""><i class="fa-solid fa-question"></i> Help</a>
+              <a class="text-base text-gray-700 hover:text-green-400" href=""><i class="fa-solid fa-rectangle-ad"></i> Promotions</a>
+              <a class="text-base text-gray-700 hover:text-green-400" href=""><i class="fa-solid fa-star"></i> BestOne</a>
+              <a class="text-base text-gray-700 hover:text-green-400" href=""><i class="fa-solid fa-users-between-lines"></i> Invite Friends</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-[1500px] mx-auto p-4">
+      <div class="relative max-h-[500px]">
+        <div class="absolute w-full h-full max-h-[500px] bg-black/45 text-gray-100 flex flex-col justify-center leading-3">
+          <h1 class="leading-3 font-bold text-4xl p-4 md:text-5xl lg:text-6xl"> <span class="text-yellow-600">RGF</span></h1>
+          <h1 class="leading-3 font-bold text-4xl p-4 md:text-5xl"><span class="text-yellow-600">GAME</span>FARM</h1>
+        </div>
+        <img class="object-cover h-full w-full" src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" style="height: 500px; width: 100%;">
+      </div>
+    </div>
+    <div class="max-w-[1500px] mx-auto px-4 py-8">
+      <div class="grid md:grid-cols-3 xl:grid-cols-3 grid-cols-1 gap-4">
+        <div class="relative rounded-xl md:h-[220px] h-[200px]">
+          <div class="absolute top-0 left-0 w-full h-full text-white bg-black/50">
+            <p class="py-4 px-2 text-2xl font-bold">Sweater</p>
+            <p class="text-base text-yellow-200 px-2"> High Quality</p>
+            <button class="absolute bottom-2 border-white rounded-xl bg-white py-2 px-4 text-black mx-2 hover:bg-black hover:text-white">Buy now</button>
+          </div>
+          <img class="max-h-[200px] md:max-h-[220px] w-full object-cover rounded-xl" src="https://i.pinimg.com/564x/62/06/13/620613c693d5f87d12bf8782be507c6b.jpg" alt="">
+        </div>
+        <div class="relative rounded-xl md:h-[220px] h-[200px]">
+          <div class="absolute top-0 left-0 w-full h-full text-white bg-black/50">
+            <p class="py-4 px-2 text-2xl font-bold">Sweater Hatch</p>
+            <p class="text-base text-yellow-200 px-2">High Quality</p>
+            <button class="absolute bottom-2 border-white rounded-xl bg-white py-2 px-4 text-black mx-2 hover:bg-black hover:text-white">Buy now</button>
+          </div>
+          <img class="max-h-[200px] md:max-h-[220px] w-full object-cover rounded-xl " src="https://i.pinimg.com/564x/bb/69/f6/bb69f65662cc44500f720cda2fd45f50.jpg" alt="">
+        </div>
+        <div class="relative rounded-xl md:h-[220px] h-[200px]">
+          <div class="absolute top-0 left-0 w-full h-full text-white bg-black/50">
+            <p class="py-4 px-2 text-2xl font-bold">Talisay Hatch </p>
+            <p class="text-base text-yellow-200 px-2">High Quality</p>
+            <button class="absolute bottom-2 border-white rounded-xl bg-white py-2 px-4 text-black mx-2 hover:bg-black hover:text-white">Buy now</button>
+          </div>
+          <img class="max-h-[200px] md:max-h-[220px] w-full object-cover rounded-xl" src="https://i.pinimg.com/564x/56/c8/c4/56c8c4b0398c9fe126af6e6be97932ad.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="max-w-[1500px] mx-auto p-4">
+      <h1 class="text-black-600 text-center font-bold text-3xl pt-10">Top Bloodline</h1>
+      <div>
+        <div>
+          <p class="text-base text-gray-700 pb-3">Filter Type</p>
+          <div class="flex items-center gap-1 py-2">
+            <button class="text-black p-1 px-5 border border-black rounded-sm hover:bg-black hover:text-white">All</button>
+            <button class="text-black p-1 px-5 border border-black rounded-sm hover:bg-black hover:text-white">Sweater</button>
+            <button class="text-black p-1 px-5 border border-black rounded-sm hover:bg-black hover:text-white">Talisay</button>
+            <button class="text-black p-1 px-5 border border-black rounded-sm hover:bg-black hover:text-white">Bangkas</button>
+            <button class="text-black p-1 px-5 border border-black rounded-sm hover:bg-black hover:text-white">Binabae</button>
+            <button class="text-black p-1 px-5 border border-black rounded-sm hover:bg-black hover:text-white">Buyogon</button>
+            <button class="text-black p-1 px-5 border border-black rounded-sm hover:bg-black hover:text-white">Bulik</button>
+            
+            
+          </div>
+        </div>
+        <div>
+          <p class="text-base text-gray-700 pb-3">Filter Price</p>
+          <div class="flex items-center gap-1">
+            <button class="text-black p-1 px-5 border border-black rounded-sm hover:bg-black hover:text-white">₱</button>
+            <button class="text-black p-1 px-5 border border-black rounded-sm hover:bg-black hover:text-white">₱₱</button>
+            <button class="text-black p-1 px-5 border border-black rounded-sm hover:bg-black hover:text-white">₱₱₱</button>
+            
+          </div>
+        </div>
+      </div>
+      <div class="max-w-[1500px] mx-auto grid md:grid-cols-4 lx:grid-cols-5 grid-cols-1 gap-2 rounded-xl shadow-lg py-4">
+        <div class="shadow-xl rounded-xl">
+          <img class="max-h-[190px] w-full h-full object-cover rounded-xl" src="https://i.pinimg.com/564x/71/94/da/7194da5ec08ff2aa051d698b1bbc4930.jpg" alt="">
+          <div class="flex flex-wrap justify-between p-4">
+            <h1 class="text-1xl font-bold text-black-600">Kabilyada</h1>
+            <p class="text-base bg-black-500 text-black px-2 rounded">₱</p>
+          </div>
+        </div>
+        <div class="shadow-xl rounded-xl">
+          <img class="max-h-[190px] w-full h-full object-cover rounded-xl transform hover:scale-105" src="https://i.pinimg.com/564x/04/b2/6e/04b26e8c6da44e363331c9e02c68abc3.jpg" alt="">
+          <div class="flex flex-wrap justify-between p-4">
+            <h1 class="text-1xl font-bold text-black-600">Talisayin</h1>
+            <p class="text-base bg-black-500 text-black px-2 rounded">₱</p>
+          </div>
+        </div>
+        <div class="shadow-xl rounded-xl">
+          <img class="max-h-[190px] w-full h-full object-cover rounded-xl transform hover:scale-105" src="https://i.pinimg.com/564x/02/d0/32/02d03266cea489593e2927c6c7500a5f.jpg" alt="">
+          <div class="flex flex-wrap justify-between p-4">
+            <h1 class="text-1xl font-bold text-black-600">Bulik</h1>
+            <p class="text-base bg-black-500 text-black px-2 rounded">₱</p>
+          </div>
+        </div>
+        <div class="shadow-xl rounded-xl">
+          <img class="max-h-[190px] w-full h-full object-cover rounded-xl transform hover:scale-105" src="https://i.pinimg.com/564x/8b/7d/a5/8b7da59cd5d9155ec3e35875600dd94d.jpg" alt="">
+          <div class="flex flex-wrap justify-between p-4">
+            <h1 class="text-1xl font-bold text-black-600">Buyogon</h1>
+            <p class="text-base bg-black-500 text-black px-2 rounded">₱</p>
+          </div>
+        </div>
+        <div class="shadow-xl rounded-xl">
+          <img class="max-h-[190px] w-full h-full object-cover rounded-xl transform hover:scale-105" src="https://i.pinimg.com/564x/93/b2/d6/93b2d6d4608f2838494f39d2b37ab849.jpg" alt="">
+          <div class="flex flex-wrap justify-between p-4">
+            <h1 class="text-1xl font-bold text-black-600">Binabae</h1>
+            <p class="text-base bg-black-500 text-black px-2 rounded">₱</p>
+          </div>
+        </div>
+          <div class="shadow-xl rounded-xl">
+            <img class="max-h-[190px] w-full h-full object-cover rounded-xl transform hover:scale-105" src="https://i.pinimg.com/564x/17/ed/5d/17ed5d6292732881a969ee7afd335924.jpg" alt="">
+            <div class="flex flex-wrap justify-between p-4">
+              <h1 class="text-1xl font-bold text-black-600">GasinhonBlack</h1>
+              <p class="text-base bg-bla-500 text-black px-2 rounded">₱</p>
+            </div>
+        </div>
+            <div class="shadow-xl rounded-xl">
+                <img class="max-h-[190px] w-full h-full object-cover rounded-xl transform hover:scale-105" src="https://i.pinimg.com/564x/14/4f/14/144f14ded24d4089477d891e76367f68.jpg" alt="">
+                <div class="flex flex-wrap justify-between p-4">
+                  <h1 class="text-1xl font-bold text-black-600">LambuhinBlack</h1>
+                  <p class="text-base bg-black-500 text-black px-2 rounded">₱</p>
+                </div>
+            </div>
+                <div class="shadow-xl rounded-xl">
+                    <img class="max-h-[190px] w-full h-full object-cover rounded-xl transform hover:scale-105" src="https://i.pinimg.com/564x/99/c3/73/99c37390398dc91986f6f1f915448d1f.jpg" alt="">
+
+                    <div class="flex flex-wrap justify-between p-4">
+                      <h1 class="text-1xl font-bold text-black-600">Bangkas</h1>
+                      <p class="text-base bg-black-500 text-black px-2 rounded">₱</p>
+                    </div>
+          </div>
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
